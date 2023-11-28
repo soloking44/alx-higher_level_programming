@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for i in range(122, 96, -1):
-    char = i
-    if i % 2 != 0:
-        char = char - 32
-    print(chr(char), end="")
-
+for k in range(122, 96, -1):
+    if k % 2 == 0:
+        j = chr(k)
+    else:
+        j = chr(k-32)
+    print("{}".format(j), end="")
