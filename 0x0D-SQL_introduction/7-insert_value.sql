@@ -1,3 +1,3 @@
--- code that shows the number of entries where id = 89 in the table first_table
+-- this is a code that puts a new row into the table first_table
 
-SELECT count(*) FROM first_table WHERE id=89;
+INSERT INTO first_table(id, name) VALUES (89, 'Best School');
