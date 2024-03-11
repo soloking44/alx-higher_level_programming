@@ -4,7 +4,7 @@ if (!firstArg || isNaN(firstArg)) {
   console.log('Missing number of occurrences');
 } else {
   firstArg = parseInt(firstArg);
-  for (let i = 0; i < firstArg; i++) {
+  for (let j = 0; j < firstArg; j++) {
     console.log('C is fun');
   }
 }
