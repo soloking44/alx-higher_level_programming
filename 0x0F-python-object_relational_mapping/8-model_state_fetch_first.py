@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A code to show the initial objects within database.
+"""A code to show the initial item within database.
 """
 import sys
 from model_state import Base, State

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is code to shows every item within a database.
+"""A code which append a State item given into database.
 """
 import sys
 from model_state import Base, State
@@ -12,5 +12,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for instance in session.query(State).order_by(State.id):
-        print(instance.id, instance.name, sep=": ")
+    new_state = State(name='Louisiana')
+    session.add(new_state)
+    new_instance = session.query(State).filter_by(name='Louisiana').first()
+    print(new_instance.id)
+    session.commit()

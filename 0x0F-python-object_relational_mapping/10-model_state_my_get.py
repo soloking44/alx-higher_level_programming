@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is code to shows every item within a database.
+"""A code to show every item which has an alphabet withint database.
 """
 import sys
 from model_state import Base, State
@@ -12,5 +12,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    for instance in session.query(State).order_by(State.id):
-        print(instance.id, instance.name, sep=": ")
+    instance = session.query(State).filter(State.name == (sys.argv[4],))
+    try:
+        print(instance[0].id)
+    except IndexError:
+        print("Not found")
