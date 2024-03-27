@@ -1,3 +1,3 @@
 #!/bin/bash
-# Fetch an outcome body within a specified URL for 200 status code outcomes.
+#  Fetchs a URL, sends a GET request into URL, then shows the body of the outcome
 curl -sL "$1"
