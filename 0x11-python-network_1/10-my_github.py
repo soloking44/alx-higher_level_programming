@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""This code to:
-- Accept your GitHub credentials (username and password)
-- Uses the GitHub API to display your id
+"""
+This a code to accept your GitHub credentials (username and password)
+then uses the GitHub API to display your id.
+
+Usage: ./10-my_github.py <GitHub username> <GitHub password>
+  - Uses Basic Authentication to access the ID.
 """
 import sys
 import requests
