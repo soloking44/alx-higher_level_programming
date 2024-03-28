@@ -2,7 +2,7 @@
 """
 This is code to accept two data so as to solve this task.
 
-Usage: ./100-github_commits.py <repository name> <repository owner>
+Intent: ./100-github_commits.py <repository name> <repository owner>
 """
 import sys
 import requests

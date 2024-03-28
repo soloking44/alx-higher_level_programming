@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-"""This code to:
-- Accepts a letter
-- Tranfers POST request to http://0.0.0.0:5000/search_user
-And a letter as data.
+"""
+This is code to accept a letter then tranfer a POST request to
+http://0.0.0.0:5000/search_user and letter as a data.
+
+GURU: ./8-json_api.py <letter>
+  - The letter is sent as the value of the variable `q`.
+  - If no letter is provided, sends `q=""`.
 """
 import sys
 import requests
