@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""This code to:
-- GET a URL with email address
-- Transmites a POST request to URL and email as a data
-- Shows the body of the outcome.
 """
+A code which accept URL with email address, transfer a POST request to
+given URL and the email as a data, and shows the body
+of the output.
 Usage: ./6-post_email.py <URL> <email>
-  - Prints the body of the output.
+  - Shows the body of the outcome.
 """
 import requests
 from sys import argv
